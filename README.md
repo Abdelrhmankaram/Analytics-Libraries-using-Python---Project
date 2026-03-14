@@ -7,8 +7,6 @@ This project involves a comprehensive exploratory data analysis (EDA) of a user 
 
 ### 📈 Charts and Analysis
 
-### 📈 Charts and Analysis
-
 #### 👥 Gender Demographics
 * **User Count by Gender**
   *A breakdown of the dataset showing the total number of male versus female participants.*
