@@ -7,44 +7,38 @@ This project involves a comprehensive exploratory data analysis (EDA) of a user 
 
 ### 📈 Charts and Analysis
 
+### 📈 Charts and Analysis
+
 #### 👥 Gender Demographics
 * **User Count by Gender**
-
+  <img src="Plots/Count by gender.png" width="800">
   *A breakdown of the dataset showing the total number of male versus female participants.*
 
-  ![Count by gender](<Plots/Count by gender.png>)
-
 * **Average Age by Gender**
-
+  <img src="Plots/Average Age by Gender.png" width="800">
   *A comparison of the mean age across genders to identify demographic balance.*
-
-  ![Average Age by Gender](<Plots/Average Age by Gender.png>)
 
 #### 📏 Physical Attributes & Trends
 * **Height and Weight Distribution**
-
+  <img src="Plots/Height and Weight distribution.png" width="800">
   *Visualizing the spread and frequency of physical metrics across the user base.*
 
-  ![Height and Weight distribution](<Plots/Height and Weight distribution.png>)
-
 * **Relationship Between Age, Height, and Weight**
-  
+  <img src="Plots/Relationship between age and height, weight.png" width="800">
   *Regression analysis exploring how age correlates with physical characteristics.*
-
-  ![Relationship between age and height, weight](<Plots/Relationship between age and height, weight.png>)
 
 #### 📍 Geographic Insights
 * **Top 10 Cities with Most Users**
-  
+  <img src="Plots/Top 10 Cities with most users.png" width="800">
   *Identification of the primary urban hubs where the user population is most concentrated.*
-
-  ![Top 10 Cities with most users](<Plots/Top 10 Cities with most users.png>)
 
 ---
 
 ### 💡 Business Questions Answered
 * **What is the age profile of our users?** The average age of the user base is approximately **33.14 years**, indicating a predominantly millennial audience.
+
 * **Are there physical attribute correlations?** Analysis shows a slight positive correlation between age and weight ($0.067$) but a negative correlation between height and weight ($-0.088$).
+
 * **How complete is our user data?** While most fields are 100% complete, the `maidenName` field is missing for 148 users, suggesting it is a non-mandatory field for the majority of the population.
 
 ---
@@ -54,7 +48,8 @@ This project involves a comprehensive exploratory data analysis (EDA) of a user 
 
 2. **Structural Audit:** Verified data shapes, column names, and data types (Integer, Float, and Object).
 
-3. **Data Cleaning:** * Extracted the `city` field from nested JSON-like strings within the `address` column using `ast.literal_eval`.
+3. **Data Cleaning:** Extracted the `city` field from nested JSON-like strings within the `address` column using `ast.literal_eval`.
+
     * Handled missing values in critical numeric columns (`age`, `height`, `weight`) by imputing them with the **median** values.
 
 4. **Statistical Profiling:** Conducted descriptive statistics and duplicate checks to ensure data integrity.
