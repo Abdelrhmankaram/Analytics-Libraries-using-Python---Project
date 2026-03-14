@@ -9,26 +9,36 @@ This project involves a comprehensive exploratory data analysis (EDA) of a user 
 
 #### 👥 Gender Demographics
 * **User Count by Gender**
-  ![Count by gender](<Plots/Count by gender.png>)
+
   *A breakdown of the dataset showing the total number of male versus female participants.*
 
+  ![Count by gender](<Plots/Count by gender.png>)
+
 * **Average Age by Gender**
-  ![Average Age by Gender](<Plots/Average Age by Gender.png>)
+
   *A comparison of the mean age across genders to identify demographic balance.*
+
+  ![Average Age by Gender](<Plots/Average Age by Gender.png>)
 
 #### 📏 Physical Attributes & Trends
 * **Height and Weight Distribution**
-  ![Height and Weight distribution](<Plots/Height and Weight distribution.png>)
+
   *Visualizing the spread and frequency of physical metrics across the user base.*
 
+  ![Height and Weight distribution](<Plots/Height and Weight distribution.png>)
+
 * **Relationship Between Age, Height, and Weight**
-  ![Relationship between age and height, weight](<Plots/Relationship between age and height, weight.png>)
+  
   *Regression analysis exploring how age correlates with physical characteristics.*
+
+  ![Relationship between age and height, weight](<Plots/Relationship between age and height, weight.png>)
 
 #### 📍 Geographic Insights
 * **Top 10 Cities with Most Users**
-  ![Top 10 Cities with most users](<Plots/Top 10 Cities with most users.png>)
+  
   *Identification of the primary urban hubs where the user population is most concentrated.*
+
+  ![Top 10 Cities with most users](<Plots/Top 10 Cities with most users.png>)
 
 ---
 
@@ -41,16 +51,21 @@ This project involves a comprehensive exploratory data analysis (EDA) of a user 
 
 ### 🛠️ What I Did
 1. **Data Acquisition:** Fetched data through a multi-page API process and exported it to a local CSV format.
+
 2. **Structural Audit:** Verified data shapes, column names, and data types (Integer, Float, and Object).
+
 3. **Data Cleaning:** * Extracted the `city` field from nested JSON-like strings within the `address` column using `ast.literal_eval`.
     * Handled missing values in critical numeric columns (`age`, `height`, `weight`) by imputing them with the **median** values.
+
 4. **Statistical Profiling:** Conducted descriptive statistics and duplicate checks to ensure data integrity.
 
 ---
 
 ### 🔑 Key Insights
 * **Data Consistency:** The dataset contains no duplicate rows, indicating high-quality data collection.
+
 * **Physical Metrics:** The average height in the dataset is **175.72 cm**, while the average weight is **75.04 kg**.
+
 * **Age Range:** The user base is composed of young to middle-aged adults, ranging from **23 to 46 years old**.
 
 ---
