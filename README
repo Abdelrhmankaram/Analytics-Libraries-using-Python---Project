@@ -9,42 +9,42 @@ This project involves a comprehensive exploratory data analysis (EDA) of a user 
 
 #### 👥 Gender Demographics
 * **User Count by Gender**
-  ![Count by gender](Plots/Count%20by%20gender.png)
+  ![Count by gender](<Plots/Count by gender.png>)
   *A breakdown of the dataset showing the total number of male versus female participants.*
 
 * **Average Age by Gender**
-  ![Average Age by Gender](Plots/Average%20Age%20by%20gender.png)
+  ![Average Age by Gender](<Plots/Average Age by Gender.png>)
   *A comparison of the mean age across genders to identify demographic balance.*
 
 #### 📏 Physical Attributes & Trends
 * **Height and Weight Distribution**
-  ![Height and Weight distribution](Plots/Height%20and%20Weight%20distribution.png)
+  ![Height and Weight distribution](<Plots/Height and Weight distribution.png>)
   *Visualizing the spread and frequency of physical metrics across the user base.*
 
 * **Relationship Between Age, Height, and Weight**
-  ![Relationship between age and height, weight](Plots/Relationship%20between%20age%20and%20height,%20weight.png)
+  ![Relationship between age and height, weight](<Plots/Relationship between age and height, weight.png>)
   *Regression analysis exploring how age correlates with physical characteristics.*
 
 #### 📍 Geographic Insights
 * **Top 10 Cities with Most Users**
-  ![Top 10 Cities with most users](Plots/Top%2010%20Cities%20with%20most%20users.png)
+  ![Top 10 Cities with most users](<Plots/Top 10 Cities with most users.png>)
   *Identification of the primary urban hubs where the user population is most concentrated.*
 
 ---
 
 ### 💡 Business Questions Answered
 * **What is the age profile of our users?** The average age of the user base is approximately **33.14 years**, indicating a predominantly millennial audience.
-* **Are there physical attribute correlations?** Analysis shows a slight positive correlation between age and weight (0.067) but a negative correlation between height and weight (-0.088).
+* **Are there physical attribute correlations?** Analysis shows a slight positive correlation between age and weight ($0.067$) but a negative correlation between height and weight ($-0.088$).
 * **How complete is our user data?** While most fields are 100% complete, the `maidenName` field is missing for 148 users, suggesting it is a non-mandatory field for the majority of the population.
 
 ---
 
 ### 🛠️ What I Did
-1.  **Data Acquisition:** Fetched data through a multi-page API process and exported it to a local CSV format.
-2.  **Structural Audit:** Verified data shapes, column names, and data types (Integer, Float, and Object).
-3.  **Data Cleaning:** * Extracted the `city` field from nested JSON-like strings within the `address` column using `ast.literal_eval`.
+1. **Data Acquisition:** Fetched data through a multi-page API process and exported it to a local CSV format.
+2. **Structural Audit:** Verified data shapes, column names, and data types (Integer, Float, and Object).
+3. **Data Cleaning:** * Extracted the `city` field from nested JSON-like strings within the `address` column using `ast.literal_eval`.
     * Handled missing values in critical numeric columns (`age`, `height`, `weight`) by imputing them with the **median** values.
-4.  **Statistical Profiling:** Conducted descriptive statistics and duplicate checks to ensure data integrity.
+4. **Statistical Profiling:** Conducted descriptive statistics and duplicate checks to ensure data integrity.
 
 ---
 
@@ -57,6 +57,7 @@ This project involves a comprehensive exploratory data analysis (EDA) of a user 
 
 ### 📁 Project Structure
 ```text
+├── Plots/               # Saved visualization images
 ├── Project.ipynb        # Main analysis notebook
 ├── user.csv             # Raw/Processed dataset
 ├── read.py              # Script for API data fetching
